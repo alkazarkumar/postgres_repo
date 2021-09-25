@@ -18,7 +18,7 @@ class Data(db.Model):
 
 @app.route("/insert")
 def index():
-    data = Data(name="Ritik",email="ritik@gmail.com")
+    data = Data(name="Alcazar",email="alcazar@gmail.com")
     db.session.add(data)
     db.session.commit()
     return "Done"  
