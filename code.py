@@ -28,6 +28,39 @@ def index2():
     data = Data.query.all()
     print(data)
     return "Done" 
+ 
+WITH
+   name_for_summary_data AS (
+      SELECT Statement)
+   SELECT columns
+   FROM name_for_summary_data
+   WHERE conditions <=> (
+      SELECT column
+      FROM name_for_summary_data)
+   [ORDER BY columns]
+
+ SELECT FROM table_name
+WHERE column LIKE 'XXXX%'
+
+or
+
+SELECT FROM table_name
+WHERE column LIKE '%XXXX%'
+
+or
+
+SELECT FROM table_name
+WHERE column LIKE 'XXXX_'
+
+or
+
+SELECT FROM table_name
+WHERE column LIKE '_XXXX'
+
+or
+
+SELECT FROM table_name
+WHERE column LIKE '_XXXX_'
 
 if __name__ == "__main__":
     app.run(debug=True)
