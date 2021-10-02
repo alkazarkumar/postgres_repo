@@ -64,3 +64,17 @@ WHERE column LIKE '_XXXX_'
 
 if __name__ == "__main__":
     app.run(debug=True)
+    
+# Adding update clause
+UPDATE table_name
+SET column1 = value1, column2 = value2...., columnN = valueN
+WHERE [condition];
+CREATE DATABASE dbname;
+CREATE TABLE table_name(
+   column1 datatype,
+   column2 datatype,
+   column3 datatype,
+   .....
+   columnN datatype,
+   PRIMARY KEY( one or more columns )
+);
