@@ -14,6 +14,20 @@ class Data(db.Model):
 
     def __repr__(self):
         return f"id : {self.id} name : {self.name} email : {self.email}"
+      
+# Value Adding
+@app.route("/insert2")
+def index2():
+    data = Data(name="Alcazar",email="alcazar@gmail.com")
+    db.session.add(data)
+    db.session.commit()
+    return "Done"  
+
+@app.route("/show2")
+def index3():
+    data = Data.query.all()
+    print(data)
+    return "Done"
 
 
 @app.route("/insert")
